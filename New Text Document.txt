@@ -1,0 +1,4 @@
+Notice that we use >> and not just > . This operator will append to a file. If we only used > , we would end
+up overwriting the file. The cat command displays the contents of the file (or files) and then returns you to the
+command line. Unlike less you have no control on how you view that text (or what you do with it). It is a
+very simple, but sometimes useful, command.

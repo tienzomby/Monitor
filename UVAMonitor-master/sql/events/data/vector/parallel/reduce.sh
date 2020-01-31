@@ -1,0 +1,1 @@
+mysql -u root -D monitor_db -p'D@1syKn0ws' -e 'SELECT * FROM hcdm_vectors;' | sed 's/\t/,/g' > /home/akshat/Documents/School/Semester_4/Thesis/UVAMonitor/sql/events/data/vector/hcdm_vectors_reduced.csv;

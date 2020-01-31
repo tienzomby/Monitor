@@ -1,0 +1,23 @@
+<h2 class="eventDialogTitle" mat-dialog-title>Create Event</h2>
+<div class="eventDialogContent">
+    <br><br>
+    <form [formGroup]="eventForm" (ngSubmit)="submitEvent()">
+        <mat-form-field class="formField">
+            <input type="text" matInput formControlName="nameControl" placeholder="Event">
+        </mat-form-field>
+        <br>
+        <mat-form-field class="formField">
+            <input type="text" matInput formControlName="streamControl" [readonly]="true" value="{{name}}">
+        </mat-form-field>
+        <br>
+        <mat-form-field class="formField">
+            <input type="text" matInput formControlName="startControl" [readonly]="true" value="{{start}}">
+        </mat-form-field>
+        <br>
+        <mat-form-field class="formField">
+            <input type="text" matInput formControlName="endControl" [readonly]="true" value="{{end}}">
+        </mat-form-field>
+        <br>
+        <button mat-stroked-button type="submit" [disabled]="!eventForm.valid">Save</button>
+    </form>
+</div>
